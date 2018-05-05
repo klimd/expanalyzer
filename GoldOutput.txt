@@ -1,0 +1,77 @@
+Defined Type: pit.
+Read type definitions.
+Defined Object: pit0.
+Defined Object: pit1.
+Defined Object: pit2.
+Defined Object: pit3.
+Defined Object: pit4.
+Defined Object: pit5.
+Read object definitions.
+Defined predicate:robotAtP.
+Defined predicate:bombAtP.
+Defined predicate:laserAtP.
+Defined predicate:hasSoftRockP.
+Defined predicate:hasHardRockP.
+Defined predicate:goldAtP.
+Defined predicate:isClearP.
+Defined predicate:isConnectedP.
+Defined predicate:armFreeP.
+Defined predicate:hasBombP.
+Defined predicate:hasLaserP.
+Defined predicate:hasGoldP.
+Read predicate definitions.  StateSize = 12
+Defined: Cat-Definition: robotAtC( pit ).
+Defined: Cat-Definition: laserAtC( pit ).
+Defined: Cat-Definition: hasLaserC().
+Defined: Cat-Definition: hasNoLaserC().
+Defined: Cat-Definition: hasBombC().
+Defined: Cat-Definition: hasNoBombC().
+Defined: Cat-Definition: bombAtC( pit ).
+Defined: Cat-Definition: clearC( pit ).
+Defined: Cat-Definition: hasGoldC().
+Defined: moveA( pit, pit ).
+Defined: pickLaserA( pit ).
+Defined: pickBombA( pit ).
+Defined: putDownLaserA( pit ).
+Defined: putDownBombA( pit ).
+Defined: fireLaserA( pit, pit ).
+Defined: detonateBombA( pit, pit ).
+Defined: pickGoldA( pit ).
+Initial State:[ robotAtP( pit0 ), bombAtP( pit0 ), laserAtP( pit0 ), hasSoftRockP( pit3 ), hasHardRockP( pit1 ), hasHardRockP( pit2 ), goldAtP( pit3 ), isConnectedP( pit0, pit1 ), isConnectedP( pit1, pit2 ), isConnectedP( pit2, pit3 ), armFreeP() ].
+Read in observation: pickLaserA.
+Read in observation: fireLaserA.
+Read in observation: moveA.
+Read in observation: fireLaserA.
+Read in observation: putDownLaserA.
+Read in observation: moveA.
+Read in observation: pickBombA.
+Read in observation: moveA.
+Read in observation: moveA.
+Read in observation: detonateBombA.
+Read in observation: moveA.
+Read in observation: pickGoldA.
+Read observations.
+Read goals for query.
+*** Working on next recognition problem.
+Per-thread times: 
+[1] active: 00:00:00.001060 idle: 00:00:00 total: 00:00:00.001060
+[2] active: 00:00:00.000004 idle: 00:00:00.001065 total: 00:00:00.001069
+[3] active: 00:00:00.000004 idle: 00:00:00.001062 total: 00:00:00.001066
+[4] active: 00:00:00.000004 idle: 00:00:00.001060 total: 00:00:00.001064
+*** Done.
+goldminerTest3: Found 2  Explanations.
+[Exp: derivProb: 8.31668e-18 rootProb: 9.997e-11 Initial State:[ robotAtP( pit0 ), bombAtP( pit0 ), laserAtP( pit0 ), hasSoftRockP( pit3 ), hasHardRockP( pit1 ), hasHardRockP( pit2 ), goldAtP( pit3 ), isConnectedP( pit0, pit1 ), isConnectedP( pit1, pit2 ), isConnectedP( pit2, pit3 ), armFreeP() ] Final State:[ robotAtP( pit0 ), bombAtP( pit0 ), laserAtP( pit0 ), hasSoftRockP( pit3 ), hasHardRockP( pit1 ), hasHardRockP( pit2 ), goldAtP( pit3 ), isConnectedP( pit0, pit1 ), isConnectedP( pit1, pit2 ), isConnectedP( pit2, pit3 ), armFreeP() ] obsindex: 12 root:[robotAtC( pit1 )] root:[clearC( pit2 )] root:[hasNoLaserC()] root:[robotAtC( pit0 )] root:[robotAtC( pit1 )] root:[robotAtC( pit2 )] root:[clearC( pit3 )] root:[hasGoldC()] ]
+[Exp: derivProb: 8.31668e-18 rootProb: 9.997e-13 Initial State:[ robotAtP( pit0 ), bombAtP( pit0 ), laserAtP( pit0 ), hasSoftRockP( pit3 ), hasHardRockP( pit1 ), hasHardRockP( pit2 ), goldAtP( pit3 ), isConnectedP( pit0, pit1 ), isConnectedP( pit1, pit2 ), isConnectedP( pit2, pit3 ), armFreeP() ] Final State:[ robotAtP( pit0 ), bombAtP( pit0 ), laserAtP( pit0 ), hasSoftRockP( pit3 ), hasHardRockP( pit1 ), hasHardRockP( pit2 ), goldAtP( pit3 ), isConnectedP( pit0, pit1 ), isConnectedP( pit1, pit2 ), isConnectedP( pit2, pit3 ), armFreeP() ] obsindex: 12 root:[robotAtC( pit1 )] root:[clearC( pit2 )] root:[hasNoLaserC()] root:[robotAtC( pit0 )] root:[robotAtC( pit1 )] root:[robotAtC( pit2 )] root:[clearC( pit3 )] root:[robotAtC( pit3 )] root:[hasGoldC()] ]
+goldminerTest3: Probabilites: 
+clearC: CP = 1.
+hasBombC: plan anchor not observed.  MDCP = -8.31418e-34 and averageMDCP = -4.19866e-32.
+hasGoldC: CP = 1.
+hasLaserC: plan anchor not observed.  MDCP = -8.31418e-34 and averageMDCP = -4.19866e-32.
+hasNoLaserC: CP = 1.
+robotAtC: CP = 1.
+.
+Setup time: 00:00:00.000167
+Processing time: 00:00:00.001362
+Teardown time: 00:00:00.000907
+Probability computation time: 00:00:00.000816
+*** Done with problem. ***.
